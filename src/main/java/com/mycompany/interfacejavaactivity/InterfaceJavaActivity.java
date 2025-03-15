@@ -4,8 +4,19 @@
 
 package com.mycompany.interfacejavaactivity;
 
-import com.mycompany.interfacejavaactivity.ListaNumeros;
-import Services.InterfaceAnimal;
+import Clases.Alimentacion.Animal;
+import Clases.Alimentacion.Persona;
+import Clases.FigurasGeometricas.Rectangulo;
+import Clases.Pagos.PagoConTargeta;
+import Clases.Pagos.PagoConEfectivo;
+import Ordenable.ListaNumeros;
+import Clases.Trabajador.Diseñador;
+import Clases.Trabajador.Desarrollador;
+import Clases.Vehiculos.Coche;
+import Clases.FigurasGeometricas.Circulo;
+import Clases.Vehiculos.Bicicleta;
+import Clases.Animales.Perro;
+import Clases.Animales.Gato;
 
 /**
  *
@@ -97,6 +108,19 @@ public class InterfaceJavaActivity {
         System.out.println("--> " + listaNumerosObj.listaD);
         System.out.println("## Lista Ordenada");
         System.out.println("--> " + listaNumerosObj.ordenar());
+        System.out.println("--------------------------------------\n");
+        
+        /*=================== ALIMENTACION ======================*/
+        
+        System.out.println("---> Trabajador: trabajar");
+        Persona personaObj = new Persona();
+        Animal animalObj = new Animal();
+        
+        System.out.println("## Persona");
+        System.out.println("Persona: " + personaObj.Comer(""));
+        System.out.println("");
+        System.out.println("## Animal");
+        System.out.println("Animal: " + animalObj.Comer(""));
         System.out.println("--------------------------------------\n");
 
     }
