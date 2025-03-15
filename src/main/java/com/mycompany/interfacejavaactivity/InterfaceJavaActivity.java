@@ -54,7 +54,7 @@ public class InterfaceJavaActivity {
         System.out.println(pagoConEfectivoObj.procesarPago(9.0));
         System.out.println("--------------------------------------\n");
         
-        System.out.println("---> Pagos: Targeta Efectivo");
+        System.out.println("---> Figuras: Area y Perimetro");
         Circulo circuloObj = new Circulo(2);
         Rectangulo rectanguloObj = new Rectangulo();
         
@@ -65,6 +65,17 @@ public class InterfaceJavaActivity {
         System.out.println("## Rectangulo");
         System.out.println(rectanguloObj.area(5.0));
         System.out.println(rectanguloObj.perimetro(9.0));
+        System.out.println("--------------------------------------\n");
+
+        System.out.println("---> Trabajador: trabajar");
+        Desarrollador desarrolladorObj = new Desarrollador();
+        Diseñador diseñadorObj = new Diseñador();
+        
+        System.out.println("## Desarrollador");
+        System.out.println(desarrolladorObj.trabajar(""));
+        System.out.println("");
+        System.out.println("## Disenador");
+        System.out.println(diseñadorObj.trabajar(""));
         System.out.println("--------------------------------------\n");
 
     }
