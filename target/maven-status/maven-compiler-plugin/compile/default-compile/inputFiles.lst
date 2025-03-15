@@ -3,11 +3,14 @@ C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivi
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\Animales\Gato.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\Animales\Perro.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\Comparacion\Producto.java
+C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\Descuento\DescuentoFijo.java
+C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\Descuento\DescuentoPorcentaje.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\FigurasGeometricas\Circulo.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\FigurasGeometricas\Rectangulo.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\NewClass.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\Notificacion\CorreoElectronico.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\Notificacion\SMS.java
+C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\Ordenable\ListaNumeros.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\Pagos\PagoConEfectivo.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\Pagos\PagoConTargeta.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\Trabajador\Desarrollador.java
@@ -15,10 +18,10 @@ C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivi
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\Vehiculos\Bicicleta.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Clases\Vehiculos\Coche.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\com\mycompany\interfacejavaactivity\InterfaceJavaActivity.java
-C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Ordenable\ListaNumeros.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Services\InterfaceAlimentacion.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Services\InterfaceAnimal.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Services\InterfaceComparableObjeto.java
+C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Services\InterfaceDescontable.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Services\InterfaceNotificable.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Services\InterfaceOrdenable.java
 C:\Users\membr\Documents\Progra_III\Proyectos\Java\GuiasJava\InterfaceJavaActivity\src\main\java\Services\InterfacePago.java

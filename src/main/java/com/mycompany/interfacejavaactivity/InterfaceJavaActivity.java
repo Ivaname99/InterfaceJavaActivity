@@ -9,7 +9,7 @@ import Clases.Alimentacion.Persona;
 import Clases.FigurasGeometricas.Rectangulo;
 import Clases.Pagos.PagoConTargeta;
 import Clases.Pagos.PagoConEfectivo;
-import Ordenable.ListaNumeros;
+import Clases.Ordenable.ListaNumeros;
 import Clases.Trabajador.Diseñador;
 import Clases.Trabajador.Desarrollador;
 import Clases.Vehiculos.Coche;
@@ -20,6 +20,8 @@ import Clases.Animales.Gato;
 import Clases.Comparacion.Producto;
 import Clases.Notificacion.CorreoElectronico;
 import Clases.Notificacion.SMS;
+import Clases.Descuento.DescuentoFijo;
+import Clases.Descuento.DescuentoPorcentaje;
 
 /**
  *
@@ -29,7 +31,7 @@ public class InterfaceJavaActivity {
 
     public static void main(String[] args) {
         
-        System.out.println("--------------------------------------\n");
+        System.out.println("\n--------------------------------------\n");
         System.out.println("---> Animales: Sonido y Movimiento\n");
         Perro perroObj = new Perro();
         Gato gatoObj = new Gato();
@@ -44,7 +46,7 @@ public class InterfaceJavaActivity {
         
         /*=================== Vehiculos: Arrancar y Detener ======================*/
         
-        System.out.println("--------------------------------------\n");
+        System.out.println("\n--------------------------------------\n");
         System.out.println("---> Vehiculos: Arrancar y Detener\n");
         Coche cocheObj = new Coche();
         Bicicleta bicicletaObj = new Bicicleta();
@@ -56,7 +58,7 @@ public class InterfaceJavaActivity {
         System.out.println("## Bicicleta");
         System.out.println("Arrancar: " + bicicletaObj.arrancar(""));
         System.out.println("Detener: " + bicicletaObj.detener(""));
-        System.out.println("--------------------------------------\n");
+        System.out.println("\n--------------------------------------\n");
         
         /*=================== Pagos ======================*/
         
@@ -69,7 +71,7 @@ public class InterfaceJavaActivity {
         System.out.println("");
         System.out.println("## Pago Con Efectivo");
         System.out.println("Con Efectivo: " + pagoConEfectivoObj.procesarPago(9.0));
-        System.out.println("--------------------------------------\n");
+        System.out.println("\n--------------------------------------\n");
         
         /*=================== Figuras: Areas y perimetros ======================*/
         
@@ -87,7 +89,7 @@ public class InterfaceJavaActivity {
         System.out.println("Base: " + rectanguloObj.largo + "\nAncho: " + rectanguloObj.ancho);
         System.out.println("\nArea: " + rectanguloObj.area());
         System.out.println("Perimetro: " + rectanguloObj.perimetro());
-        System.out.println("--------------------------------------\n");
+        System.out.println("\n--------------------------------------\n");
 
         /*=================== Trabajador ======================*/
         
@@ -100,7 +102,7 @@ public class InterfaceJavaActivity {
         System.out.println("");
         System.out.println("## Disenador");
         System.out.println("Trabajar: " + diseñadorObj.trabajar(""));
-        System.out.println("--------------------------------------\n");
+        System.out.println("\n--------------------------------------\n");
         
         /*=================== LISTA ORDENABLE ======================*/
         
@@ -111,7 +113,7 @@ public class InterfaceJavaActivity {
         System.out.println("> " + listaNumerosObj.listaD);
         System.out.println("## Lista Ordenada");
         System.out.println("> " + listaNumerosObj.ordenar());
-        System.out.println("--------------------------------------\n");
+        System.out.println("\n--------------------------------------\n");
         
         /*=================== ALIMENTACION ======================*/
         
@@ -124,7 +126,7 @@ public class InterfaceJavaActivity {
         System.out.println("");
         System.out.println("## Animal");
         System.out.println("Animal: " + animalObj.Comer(""));
-        System.out.println("--------------------------------------\n");
+        System.out.println("\n--------------------------------------\n");
         
         /*=================== NOTIFICACION ======================*/
         
@@ -137,7 +139,7 @@ public class InterfaceJavaActivity {
         System.out.println("");
         System.out.println("## SMS");
         System.out.println("Datos: " + smsObj.enviarNotificacion(""));
-        System.out.println("--------------------------------------\n");
+        System.out.println("\n--------------------------------------\n");
         
         /*=================== COMPARACION  ======================*/
         
@@ -161,6 +163,23 @@ public class InterfaceJavaActivity {
         } else {
             System.out.println("Ambos productos tienen el mismo precio.");
         }
-        System.out.println("--------------------------------------\n");
+        System.out.println("\n--------------------------------------\n");
+        
+        /*=================== DESCUENTO  ======================*/
+        
+        System.out.println("---> Descuentos");
+
+        double precioOriginal = 100.0;
+
+        DescuentoPorcentaje descuentoPorcentaje = new DescuentoPorcentaje(20);
+        double precioConDescuentoPorcentaje = descuentoPorcentaje.calcularDescuento(precioOriginal);
+
+        DescuentoFijo descuentoFijo = new DescuentoFijo(15);
+        double precioConDescuentoFijo = descuentoFijo.calcularDescuento(precioOriginal);
+
+        System.out.println("\nPrecio original: $" + precioOriginal);
+        System.out.println("Precio con 20% de descuento: $" + precioConDescuentoPorcentaje);
+        System.out.println("Precio con descuento fijo de $15: $" + precioConDescuentoFijo);
+        System.out.println("\n--------------------------------------\n");
     }
 }

@@ -1,3 +1,4 @@
+Clases\Descuento\DescuentoFijo.class
 Services\InterfaceComparableObjeto.class
 Clases\FigurasGeometricas\Rectangulo.class
 Clases\Alimentacion\Persona.class
@@ -10,6 +11,7 @@ Clases\Pagos\PagoConEfectivo.class
 Clases\NewClass.class
 Clases\FigurasGeometricas\Circulo.class
 Clases\Trabajador\Diseñador.class
+Services\InterfaceDescontable.class
 Services\InterfaceAnimal.class
 Services\InterfacePago.class
 Services\InterfazFiguraGeometrica.class
@@ -18,10 +20,11 @@ com\mycompany\interfacejavaactivity\InterfaceJavaActivity.class
 Services\InterfaceNotificable.class
 Clases\Animales\Perro.class
 Clases\Animales\Gato.class
+Clases\Descuento\DescuentoPorcentaje.class
 Services\InterfaceVehiculo.class
 Clases\Notificacion\SMS.class
-Ordenable\ListaNumeros.class
 Clases\Alimentacion\Animal.class
 Clases\Pagos\PagoConTargeta.class
 Clases\Vehiculos\Bicicleta.class
 Services\InterfaceTrabajador.class
+Clases\Ordenable\ListaNumeros.class
