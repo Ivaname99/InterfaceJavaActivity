@@ -14,7 +14,7 @@ public class InterfaceJavaActivity {
 
     public static void main(String[] args) {
         
-        System.out.println("--------------------------------------");
+        System.out.println("--------------------------------------\n");
         System.out.println("---> Animales: Sonido y Movimiento");
         Perro perroObj = new Perro();
         Gato gatoObj = new Gato();
@@ -29,7 +29,7 @@ public class InterfaceJavaActivity {
         
         /*=================== Vehiculos: Arrancar y Detener ======================*/
         
-        System.out.println("--------------------------------------");
+        System.out.println("--------------------------------------\n");
         System.out.println("---> Vehiculos: Arrancar y Detener");
         Coche cocheObj = new Coche();
         Bicicleta bicicletaObj = new Bicicleta();
@@ -41,6 +41,17 @@ public class InterfaceJavaActivity {
         System.out.println("## Bicicleta");
         System.out.println(bicicletaObj.arrancar(""));
         System.out.println(bicicletaObj.detener(""));
+        
+        System.out.println("--------------------------------------\n");
+        System.out.println("---> Pagos: Targeta Efectivo");
+        PagoConTargeta pagoConTargetaObj = new PagoConTargeta();
+        PagoConEfectivo pagoConEfectivoObj = new PagoConEfectivo();
+        
+        System.out.println("## Pago Con Targeta");
+        System.out.println(pagoConTargetaObj.procesarPago(7.0));
+        System.out.println("");
+        System.out.println("## Pago Con Efectivo");
+        System.out.println(pagoConEfectivoObj.procesarPago(9.0));
         System.out.println("--------------------------------------");
 
     }
