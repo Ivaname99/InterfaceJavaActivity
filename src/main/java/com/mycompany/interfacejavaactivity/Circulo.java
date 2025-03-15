@@ -10,20 +10,20 @@ import Services.InterfazFiguraGeometrica;
  *
  * @author membr
  */
-public class Circulo implements InterfazFiguraGeometrica {
+public class Circulo implements InterfazFiguraGeometrica<Double> {
 
-    private double radio;
+    public double radio;
     public Circulo(double radio) {
         this.radio = radio;
     }
     
     @Override
-    public Object area(Double a) {
+    public Double area() {
         return Math.PI * radio * radio;
     }
 
     @Override
-    public Object perimetro(Double b) {
+    public Double perimetro() {
         return 2 * Math.PI * radio;
     }
     

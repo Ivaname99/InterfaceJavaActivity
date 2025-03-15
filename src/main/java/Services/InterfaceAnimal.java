@@ -8,7 +8,7 @@ package Services;
  *
  * @author membr
  */
-public interface InterfazFiguraGeometrica<T> {
-    T area();
-    T perimetro();
+public interface InterfaceAnimal<T> {
+    T hacerSonido(String Objet);
+    T mover(String Objet);
 }

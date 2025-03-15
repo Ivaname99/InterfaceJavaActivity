@@ -4,13 +4,13 @@
  */
 package com.mycompany.interfacejavaactivity;
 
-import Services.AnimalInterface;
+import Services.InterfaceAnimal;
 
 /**
  *
  * @author membr
  */
-public class Gato implements AnimalInterface<String> {
+public class Gato implements InterfaceAnimal<String> {
     
     @Override
     public String hacerSonido(String objet) {

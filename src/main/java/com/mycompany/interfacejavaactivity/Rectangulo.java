@@ -10,20 +10,22 @@ import Services.InterfazFiguraGeometrica;
  *
  * @author membr
  */
-public class Rectangulo implements InterfazFiguraGeometrica {
+public class Rectangulo implements InterfazFiguraGeometrica<Double> {
 
-    private double largo, ancho;
-    
-    
+    public double largo, ancho;
+
+    public Rectangulo(double largo, double ancho) {
+        this.largo = largo;
+        this.ancho = ancho;
+    }
     
     @Override
-    public Object area(Double a) {
+    public Double area() {
         return largo * ancho;
     }
 
     @Override
-    public Object perimetro(Double b) {
+    public Double perimetro() {
         return 2 * (largo + ancho);
     }
-    
 }

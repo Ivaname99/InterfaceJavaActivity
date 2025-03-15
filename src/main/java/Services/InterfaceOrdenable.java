@@ -4,11 +4,12 @@
  */
 package Services;
 
+import java.util.List;
+
 /**
  *
  * @author membr
  */
-public interface AnimalInterface<T> {
-    T hacerSonido(String Objet);
-    T mover(String Objet);
+public interface InterfaceOrdenable<T> {
+    T ordenar();
 }

@@ -4,7 +4,8 @@
 
 package com.mycompany.interfacejavaactivity;
 
-import Services.AnimalInterface;
+import com.mycompany.interfacejavaactivity.ListaNumeros;
+import Services.InterfaceAnimal;
 
 /**
  *
@@ -20,12 +21,12 @@ public class InterfaceJavaActivity {
         Gato gatoObj = new Gato();
         
         System.out.println("## Perro");
-        System.out.println(perroObj.hacerSonido(""));
-        System.out.println(perroObj.mover(""));
+        System.out.println("Sonido: " + perroObj.hacerSonido(""));
+        System.out.println("Movimiento: " + perroObj.mover(""));
         System.out.println("");
         System.out.println("## Gato");
-        System.out.println(gatoObj.hacerSonido(""));
-        System.out.println(gatoObj.mover(""));
+        System.out.println("Sonido: " + gatoObj.hacerSonido(""));
+        System.out.println("Movimiento: " + gatoObj.mover(""));
         
         /*=================== Vehiculos: Arrancar y Detener ======================*/
         
@@ -35,47 +36,67 @@ public class InterfaceJavaActivity {
         Bicicleta bicicletaObj = new Bicicleta();
         
         System.out.println("## Coche");
-        System.out.println(cocheObj.arrancar(""));
-        System.out.println(cocheObj.detener(""));
+        System.out.println("Arrancar: " + cocheObj.arrancar(""));
+        System.out.println("Detener: " + cocheObj.detener(""));
         System.out.println("");
         System.out.println("## Bicicleta");
-        System.out.println(bicicletaObj.arrancar(""));
-        System.out.println(bicicletaObj.detener(""));
-        
+        System.out.println("Arrancar: " + bicicletaObj.arrancar(""));
+        System.out.println("Detener: " + bicicletaObj.detener(""));
         System.out.println("--------------------------------------\n");
+        
+        /*=================== Pagos ======================*/
+        
         System.out.println("---> Pagos: Targeta Efectivo");
         PagoConTargeta pagoConTargetaObj = new PagoConTargeta();
         PagoConEfectivo pagoConEfectivoObj = new PagoConEfectivo();
         
         System.out.println("## Pago Con Targeta");
-        System.out.println(pagoConTargetaObj.procesarPago(7.0));
+        System.out.println("Con Targeta: " + pagoConTargetaObj.procesarPago(7.0));
         System.out.println("");
         System.out.println("## Pago Con Efectivo");
-        System.out.println(pagoConEfectivoObj.procesarPago(9.0));
+        System.out.println("Con Efectivo: " + pagoConEfectivoObj.procesarPago(9.0));
         System.out.println("--------------------------------------\n");
+        
+        /*=================== Figuras: Areas y perimetros ======================*/
         
         System.out.println("---> Figuras: Area y Perimetro");
-        Circulo circuloObj = new Circulo(2);
-        Rectangulo rectanguloObj = new Rectangulo();
+        Circulo circuloObj = new Circulo(5);
+        Rectangulo rectanguloObj = new Rectangulo(5, 3);
         
         System.out.println("## Circulo");
-        System.out.println(circuloObj.area(9.0));
-        System.out.println(circuloObj.perimetro(4.0));
+        System.out.println("Radio: " + circuloObj.radio);
+        System.out.println("Area: " + circuloObj.area());
+        System.out.println("Perimetro: " + circuloObj.perimetro());
         System.out.println("");
+        
         System.out.println("## Rectangulo");
-        System.out.println(rectanguloObj.area(5.0));
-        System.out.println(rectanguloObj.perimetro(9.0));
+        System.out.println("Base: " + rectanguloObj.largo + "\nAncho: " + rectanguloObj.ancho);
+        System.out.println("\nArea: " + rectanguloObj.area());
+        System.out.println("Perimetro: " + rectanguloObj.perimetro());
         System.out.println("--------------------------------------\n");
 
+        /*=================== Trabajador ======================*/
+        
         System.out.println("---> Trabajador: trabajar");
         Desarrollador desarrolladorObj = new Desarrollador();
         Diseñador diseñadorObj = new Diseñador();
         
         System.out.println("## Desarrollador");
-        System.out.println(desarrolladorObj.trabajar(""));
+        System.out.println("Trabajar: " + desarrolladorObj.trabajar(""));
         System.out.println("");
         System.out.println("## Disenador");
-        System.out.println(diseñadorObj.trabajar(""));
+        System.out.println("Trabajar: " + diseñadorObj.trabajar(""));
+        System.out.println("--------------------------------------\n");
+        
+        /*=================== LISTA ORDENABLE ======================*/
+        
+        System.out.println("---> Lista Ordenable");
+        ListaNumeros listaNumerosObj = new ListaNumeros();
+        
+        System.out.println("## Lista Desordenada");
+        System.out.println("--> " + listaNumerosObj.listaD);
+        System.out.println("## Lista Ordenada");
+        System.out.println("--> " + listaNumerosObj.ordenar());
         System.out.println("--------------------------------------\n");
 
     }
