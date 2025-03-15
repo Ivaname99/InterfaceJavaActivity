@@ -1,10 +1,13 @@
 Services\AnimalInterface.class
 com\mycompany\interfacejavaactivity\PagoConTargeta.class
 com\mycompany\interfacejavaactivity\InterfaceJavaActivity.class
-com\mycompany\interfacejavaactivity\PagoConEfectivo.class
-com\mycompany\interfacejavaactivity\Perro.class
-Services\InterfaceVehiculo.class
-Services\InterfacePago.class
 com\mycompany\interfacejavaactivity\Bicicleta.class
 com\mycompany\interfacejavaactivity\Coche.class
 com\mycompany\interfacejavaactivity\Gato.class
+com\mycompany\interfacejavaactivity\PagoConEfectivo.class
+com\mycompany\interfacejavaactivity\Perro.class
+com\mycompany\interfacejavaactivity\Circulo.class
+Services\InterfaceVehiculo.class
+com\mycompany\interfacejavaactivity\Rectangulo.class
+Services\InterfacePago.class
+Services\InterfazFiguraGeometrica.class

@@ -52,7 +52,20 @@ public class InterfaceJavaActivity {
         System.out.println("");
         System.out.println("## Pago Con Efectivo");
         System.out.println(pagoConEfectivoObj.procesarPago(9.0));
-        System.out.println("--------------------------------------");
+        System.out.println("--------------------------------------\n");
+        
+        System.out.println("---> Pagos: Targeta Efectivo");
+        Circulo circuloObj = new Circulo(2);
+        Rectangulo rectanguloObj = new Rectangulo();
+        
+        System.out.println("## Circulo");
+        System.out.println(circuloObj.area(9.0));
+        System.out.println(circuloObj.perimetro(4.0));
+        System.out.println("");
+        System.out.println("## Rectangulo");
+        System.out.println(rectanguloObj.area(5.0));
+        System.out.println(rectanguloObj.perimetro(9.0));
+        System.out.println("--------------------------------------\n");
 
     }
 }
