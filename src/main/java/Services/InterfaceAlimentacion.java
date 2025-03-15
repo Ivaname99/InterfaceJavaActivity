@@ -7,6 +7,7 @@ package Services;
 /**
  *
  * @author membr
+ * @param <T>
  */
 public interface InterfaceAlimentacion<T> {
     T Comer(String Object);

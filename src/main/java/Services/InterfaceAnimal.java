@@ -7,6 +7,7 @@ package Services;
 /**
  *
  * @author membr
+ * @param <T>
  */
 public interface InterfaceAnimal<T> {
     T hacerSonido(String Objet);

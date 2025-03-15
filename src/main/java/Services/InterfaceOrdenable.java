@@ -4,11 +4,10 @@
  */
 package Services;
 
-import java.util.List;
-
 /**
  *
  * @author membr
+ * @param <T>
  */
 public interface InterfaceOrdenable<T> {
     T ordenar();

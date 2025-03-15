@@ -7,6 +7,7 @@ package Services;
 /**
  *
  * @author membr
+ * @param <T>
  */
 public interface InterfaceVehiculo<T> {
     T arrancar(String objet);

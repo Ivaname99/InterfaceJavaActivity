@@ -17,6 +17,8 @@ import Clases.FigurasGeometricas.Circulo;
 import Clases.Vehiculos.Bicicleta;
 import Clases.Animales.Perro;
 import Clases.Animales.Gato;
+import Clases.Notificacion.CorreoElectronico;
+import Clases.Notificacion.SMS;
 
 /**
  *
@@ -27,7 +29,7 @@ public class InterfaceJavaActivity {
     public static void main(String[] args) {
         
         System.out.println("--------------------------------------\n");
-        System.out.println("---> Animales: Sonido y Movimiento");
+        System.out.println("---> Animales: Sonido y Movimiento\n");
         Perro perroObj = new Perro();
         Gato gatoObj = new Gato();
         
@@ -42,7 +44,7 @@ public class InterfaceJavaActivity {
         /*=================== Vehiculos: Arrancar y Detener ======================*/
         
         System.out.println("--------------------------------------\n");
-        System.out.println("---> Vehiculos: Arrancar y Detener");
+        System.out.println("---> Vehiculos: Arrancar y Detener\n");
         Coche cocheObj = new Coche();
         Bicicleta bicicletaObj = new Bicicleta();
         
@@ -57,7 +59,7 @@ public class InterfaceJavaActivity {
         
         /*=================== Pagos ======================*/
         
-        System.out.println("---> Pagos: Targeta Efectivo");
+        System.out.println("---> Pagos: Targeta Efectivo\n");
         PagoConTargeta pagoConTargetaObj = new PagoConTargeta();
         PagoConEfectivo pagoConEfectivoObj = new PagoConEfectivo();
         
@@ -70,7 +72,7 @@ public class InterfaceJavaActivity {
         
         /*=================== Figuras: Areas y perimetros ======================*/
         
-        System.out.println("---> Figuras: Area y Perimetro");
+        System.out.println("---> Figuras: Area y Perimetro\n");
         Circulo circuloObj = new Circulo(5);
         Rectangulo rectanguloObj = new Rectangulo(5, 3);
         
@@ -88,7 +90,7 @@ public class InterfaceJavaActivity {
 
         /*=================== Trabajador ======================*/
         
-        System.out.println("---> Trabajador: trabajar");
+        System.out.println("---> Trabajador: trabajar\n");
         Desarrollador desarrolladorObj = new Desarrollador();
         Diseñador diseñadorObj = new Diseñador();
         
@@ -101,18 +103,18 @@ public class InterfaceJavaActivity {
         
         /*=================== LISTA ORDENABLE ======================*/
         
-        System.out.println("---> Lista Ordenable");
+        System.out.println("---> Lista Ordenable\n");
         ListaNumeros listaNumerosObj = new ListaNumeros();
         
         System.out.println("## Lista Desordenada");
-        System.out.println("--> " + listaNumerosObj.listaD);
+        System.out.println("> " + listaNumerosObj.listaD);
         System.out.println("## Lista Ordenada");
-        System.out.println("--> " + listaNumerosObj.ordenar());
+        System.out.println("> " + listaNumerosObj.ordenar());
         System.out.println("--------------------------------------\n");
         
         /*=================== ALIMENTACION ======================*/
         
-        System.out.println("---> Trabajador: trabajar");
+        System.out.println("---> Trabajador: trabajar\n");
         Persona personaObj = new Persona();
         Animal animalObj = new Animal();
         
@@ -122,6 +124,18 @@ public class InterfaceJavaActivity {
         System.out.println("## Animal");
         System.out.println("Animal: " + animalObj.Comer(""));
         System.out.println("--------------------------------------\n");
+        
+        /*=================== ALIMENTACION ======================*/
+        
+        System.out.println("---> Notificacion: enviarNotificacion\n");
+        CorreoElectronico correoEletronicoObj = new CorreoElectronico();
+        SMS smsObj = new SMS();
 
+        System.out.println("## Correo Electronico");
+        System.out.println("Datos: " + correoEletronicoObj.enviarNotificacion(""));
+        System.out.println("");
+        System.out.println("## SMS");
+        System.out.println("Datos: " + smsObj.enviarNotificacion(""));
+        System.out.println("--------------------------------------\n");
     }
 }

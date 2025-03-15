@@ -9,6 +9,6 @@ package Services;
  * @author membr
  * @param <T>
  */
-public interface InterfaceTrabajador<T> {
-    T trabajar(String object);
+public interface InterfaceNotificable<T> {
+    T enviarNotificacion(String Object);
 }

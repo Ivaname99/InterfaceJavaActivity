@@ -7,6 +7,7 @@ package Services;
 /**
  *
  * @author membr
+ * @param <T>
  */
 public interface InterfacePago<T> {
     T procesarPago(Double cantidad);
