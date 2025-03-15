@@ -1,9 +1,11 @@
+Services\InterfaceComparableObjeto.class
 Clases\FigurasGeometricas\Rectangulo.class
 Clases\Alimentacion\Persona.class
 Clases\Vehiculos\Coche.class
 Clases\Notificacion\CorreoElectronico.class
 Services\InterfaceOrdenable.class
 Services\InterfaceAlimentacion.class
+Clases\Comparacion\Producto.class
 Clases\Pagos\PagoConEfectivo.class
 Clases\NewClass.class
 Clases\FigurasGeometricas\Circulo.class

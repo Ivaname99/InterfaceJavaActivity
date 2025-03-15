@@ -17,6 +17,7 @@ import Clases.FigurasGeometricas.Circulo;
 import Clases.Vehiculos.Bicicleta;
 import Clases.Animales.Perro;
 import Clases.Animales.Gato;
+import Clases.Comparacion.Producto;
 import Clases.Notificacion.CorreoElectronico;
 import Clases.Notificacion.SMS;
 
@@ -125,7 +126,7 @@ public class InterfaceJavaActivity {
         System.out.println("Animal: " + animalObj.Comer(""));
         System.out.println("--------------------------------------\n");
         
-        /*=================== ALIMENTACION ======================*/
+        /*=================== NOTIFICACION ======================*/
         
         System.out.println("---> Notificacion: enviarNotificacion\n");
         CorreoElectronico correoEletronicoObj = new CorreoElectronico();
@@ -136,6 +137,30 @@ public class InterfaceJavaActivity {
         System.out.println("");
         System.out.println("## SMS");
         System.out.println("Datos: " + smsObj.enviarNotificacion(""));
+        System.out.println("--------------------------------------\n");
+        
+        /*=================== COMPARACION  ======================*/
+        
+        System.out.println("---> Comparacion de Productos\n");
+        Producto producto1 = new Producto(50.0);
+        Producto producto2 = new Producto(75.0);
+
+        System.out.println("## Producto 1:");
+        System.out.println("Precio: " + producto1.precio);
+
+        System.out.println("\n## Producto 2:");
+        System.out.println("Precio: " + producto2.precio);
+
+        int resultado = producto1.comparar(producto2);
+
+        System.out.println("\nResultado de la comparacion:");
+        if (resultado < 0) {
+            System.out.println("El Producto 1 es mas barato que el Producto 2.");
+        } else if (resultado > 0) {
+            System.out.println("El Producto 1 es mas caro que el Producto 2.");
+        } else {
+            System.out.println("Ambos productos tienen el mismo precio.");
+        }
         System.out.println("--------------------------------------\n");
     }
 }
