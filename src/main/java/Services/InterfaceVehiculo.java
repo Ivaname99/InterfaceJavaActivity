@@ -8,7 +8,7 @@ package Services;
  *
  * @author membr
  */
-public interface AnimalInterface<T> {
-    T hacerSonido(String Objet);
-    T mover(String Objet);
+public interface InterfaceVehiculo<T> {
+    T arrancar(String objet);
+    T detener(String objet);
 }

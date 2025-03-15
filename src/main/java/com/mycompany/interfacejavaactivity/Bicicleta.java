@@ -4,21 +4,22 @@
  */
 package com.mycompany.interfacejavaactivity;
 
-import Services.AnimalInterface;
+import Services.InterfaceVehiculo;
 
 /**
  *
  * @author membr
  */
-public class Perro implements AnimalInterface<String> {
+public class Bicicleta implements InterfaceVehiculo<String>{
 
     @Override
-    public String hacerSonido(String objet) {
-        return "Perro que muerde no ladra: Grrrrrr";
+    public String arrancar(String objet) {
+        return "La bicicleta comienza a rodar.";
     }
 
     @Override
-    public String mover(String objet) {
-        return "El perrito llamado Princesa ve a un chico... RUN";
+    public String detener(String objet) {
+        return "La bicicleta se ha detenido.";
     }
+    
 }

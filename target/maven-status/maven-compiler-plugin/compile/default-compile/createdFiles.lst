@@ -1,4 +1,7 @@
-com\mycompany\interfacejavaactivity\Perro.class
 Services\AnimalInterface.class
 com\mycompany\interfacejavaactivity\InterfaceJavaActivity.class
+com\mycompany\interfacejavaactivity\Perro.class
+Services\InterfaceVehiculo.class
+com\mycompany\interfacejavaactivity\Bicicleta.class
+com\mycompany\interfacejavaactivity\Coche.class
 com\mycompany\interfacejavaactivity\Gato.class

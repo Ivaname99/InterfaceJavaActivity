@@ -10,16 +10,16 @@ import Services.AnimalInterface;
  *
  * @author membr
  */
-public class Gato implements AnimalInterface {
-
+public class Gato implements AnimalInterface<String> {
+    
     @Override
-    public void hacerSonido() {
-        System.out.println("Ay mi gatito: Miau! Miau!");
+    public String hacerSonido(String objet) {
+        return "Ay mi gatito: Miau! Miau!";
     }
 
     @Override
-    public void mover() {
-        System.out.println("El gatito de media tonelada se dirige hacia ti...");
+    public String mover(String Objet) {
+        return "El gatito de media tonelada se dirige hacia ti...";
     }
     
 }
